@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lenovo.sample_project.Mealplanner">
+
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/app_bar_daylist">
+        </include>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Breakfast"
+        android:id="@+id/breakfast"
+        android:layout_marginTop="90dp"
+        android:layout_below="@+id/app_bar_daylist"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="5"
+        android:minLines="3"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/breakfasttxt"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/breakfast"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/day"
+        android:layout_below="@+id/app_bar_daylist"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/date"
+        android:layout_below="@+id/day"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Lunch"
+        android:id="@+id/lunch"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/breakfasttxt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="5"
+        android:minLines="3"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/lunchtxt"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/lunch"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Snacks"
+        android:id="@+id/snacks"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/lunchtxt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="5"
+        android:minLines="3"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/snacktxt"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/snacks"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Dinner"
+        android:id="@+id/dinner"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/snacktxt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="5"
+        android:minLines="3"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/dinnertext"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/dinner"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Reminder"
+        android:id="@+id/reminder"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/dinnertext"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="5"
+        android:minLines="3"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/remindertext"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/reminder"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:id="@+id/btn_plan"
+        android:background="@drawable/normal_button"
+        android:layout_below="@+id/remindertext"
+        android:onClick="create_plan"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SET NOTIFICATION"
+        android:id="@+id/btn_setalarm"
+
+        android:layout_marginTop="25dp"
+        android:background="@drawable/normal_button"
+        android:layout_below="@+id/btn_plan"
+        android:onClick="alarm_set"
+    />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CANCEL NOTIFICATION"
+        android:id="@+id/btn_cancelalarm"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/normal_button"
+        android:layout_below="@+id/btn_setalarm"
+        android:onClick="alarm_off"
+        />
+
+</RelativeLayout>
+</ScrollView>

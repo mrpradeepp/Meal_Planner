@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Name"
+        android:id="@+id/contactname"
+        android:layout_margin="10dp"
+        android:width="175dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Number"
+        android:width="175dp"
+        android:id="@+id/contactnumber"
+        android:layout_below="@+id/contactname"
+        android:layout_margin="10dp"
+        />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/phonebutton"
+        android:src="@drawable/phone"
+        android:scaleType="fitCenter"
+        android:layout_toRightOf="@+id/contactnumber"
+       android:layout_margin="5dp"
+        android:layout_toEndOf="@+id/contactname" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/browserbutton"
+        android:src="@drawable/browser"
+        android:scaleType="fitCenter"
+        android:layout_toRightOf="@+id/phonebutton"
+        android:layout_margin="5dp"
+      />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/emailbutton"
+        android:src="@drawable/email"
+        android:scaleType="fitCenter"
+        android:layout_toRightOf="@+id/browserbutton"
+        android:layout_margin="5dp"
+        />
+
+
+</RelativeLayout>
