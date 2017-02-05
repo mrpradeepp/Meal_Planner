@@ -220,9 +220,11 @@ public class Contact_home extends AppCompatActivity implements AdapterView.OnIte
         {
 
             Toast.makeText(this,"ERROR adding Contact",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"Please fill all fields correctly",Toast.LENGTH_LONG).show();
         }
 
-                     Toast.makeText(this,"Please fill all fields correctly",Toast.LENGTH_LONG).show();   }
+                    // Toast.makeText(this,"Please fill all fields correctly",Toast.LENGTH_LONG).show();
+                    }
 
     }
 

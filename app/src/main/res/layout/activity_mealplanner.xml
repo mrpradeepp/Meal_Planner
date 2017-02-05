@@ -43,7 +43,7 @@
         android:layout_below="@+id/breakfast"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="25dp" />
+        android:layout_marginTop="25dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -172,7 +172,7 @@
         android:layout_height="wrap_content"
         android:text="Create"
         android:id="@+id/btn_plan"
-        android:background="@drawable/normal_button"
+        android:background="@drawable/button_bg"
         android:layout_below="@+id/remindertext"
         android:onClick="create_plan"
         android:layout_centerHorizontal="true"
@@ -186,7 +186,7 @@
         android:id="@+id/btn_setalarm"
 
         android:layout_marginTop="25dp"
-        android:background="@drawable/normal_button"
+        android:background="@drawable/button_bg"
         android:layout_below="@+id/btn_plan"
         android:onClick="alarm_set"
     />
@@ -198,7 +198,7 @@
         android:id="@+id/btn_cancelalarm"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="25dp"
-        android:background="@drawable/normal_button"
+        android:background="@drawable/button_bg"
         android:layout_below="@+id/btn_setalarm"
         android:onClick="alarm_off"
         />

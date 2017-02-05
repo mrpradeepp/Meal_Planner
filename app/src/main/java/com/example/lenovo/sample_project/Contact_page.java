@@ -7,6 +7,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Toast;
 
 public class Contact_page extends AppCompatActivity {
 
@@ -34,8 +35,14 @@ public class Contact_page extends AppCompatActivity {
         startActivity(i);
     }
 
+
+
     public void viewcontacts(View view) {
         Intent i = new Intent(this,viewContact.class);
         startActivity(i);
+    }
+
+    public void manage_contacts(View view) {
+        Toast.makeText(this,"This feature is not available in this version",Toast.LENGTH_LONG).show();
     }
 }

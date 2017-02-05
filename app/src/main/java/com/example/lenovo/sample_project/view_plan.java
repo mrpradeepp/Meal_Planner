@@ -70,20 +70,21 @@ public class view_plan extends AppCompatActivity {
                Button showbtn = (Button) findViewById(R.id.btn_edit);
 
                Cursor cursor = (Cursor) parent.getAdapter().getItem(position);
-              String link = cursor.getString(cursor.getColumnIndex("date"));
+             final String link = cursor.getString(cursor.getColumnIndex("date"));
                final  String key = cursor.getString(cursor.getColumnIndex("date"));
                Intent i = new Intent(getApplicationContext(),Display_dayplan.class);
-               i.putExtra("Date",link);
+               i.putExtra("Date", link);
                startActivity(i);
-               //Toast.makeText(getApplicationContext(), link, Toast.LENGTH_LONG).show();
+              // Toast.makeText(getApplicationContext(), link, Toast.LENGTH_LONG).show();
                showbtn.setOnClickListener(new View.OnClickListener() {
 
                    @Override
                    public void onClick(View arg0) {
-
+                       Intent i = new Intent(getApplicationContext(),Display_dayplan.class);
+                       i.putExtra("Date",link);
                      //  Cursor cursor = (Cursor) parent.getAdapter().getItem(position);
                       // String link = cursor.getString(cursor.getColumnIndex("date"));
-                      // Toast.makeText(getApplicationContext(),"Hello", Toast.LENGTH_LONG).show();
+
 
                    }
                });

@@ -35,7 +35,8 @@
         android:layout_height="wrap_content"
         android:text="VIEW PLAN"
         android:id="@+id/btn_viewplan"
-        android:layout_centerVertical="true"
+       android:layout_below="@id/btn_mealplan"
+        android:layout_marginTop="25dp"
         android:background="@drawable/normal_button"
         android:layout_centerHorizontal="true"
         android:onClick="view_plan"/>

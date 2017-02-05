@@ -25,16 +25,18 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Category"
         android:id="@+id/categoryLabel"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/emailLabel"
          />
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/categoryspinner"
-        android:layout_alignParentTop="true"
-       android:layout_marginTop="50dp"
-        android:layout_toRightOf="@+id/PhoneLabel"
-        android:layout_toEndOf="@+id/PhoneLabel"
+
+       android:layout_marginTop="20dp"
+        android:layout_marginLeft="35dp"
+        android:layout_below="@+id/emailtext"
+       android:layout_toRightOf="@id/categoryLabel"
         />
 
 
@@ -163,12 +165,13 @@
         android:text="ADD CONTACT"
         android:id="@+id/btn_addcontact"
         android:onClick="contacts_add"
-        android:layout_below="@+id/emailtext"
+        android:layout_below="@id/categoryspinner"
         android:layout_alignLeft="@+id/button3"
         android:layout_alignStart="@+id/button3"
         android:layout_alignRight="@+id/btn_next"
         android:layout_alignEnd="@+id/btn_next"
-        android:background="@drawable/normal_button"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_bg"
         />
 
 </RelativeLayout>

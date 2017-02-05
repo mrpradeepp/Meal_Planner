@@ -34,7 +34,7 @@
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="61dp"
-        android:clickable="true"/>
+       />
 
 
 </RelativeLayout>
